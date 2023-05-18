@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+/*
+/*
+/*header - nav*/
+
+header {
+  background-color: #ffbf69;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.navbar-brand {
+  margin-left: 5vw;
+  font-size: 2vw;
+  text-align: left;
+}
+
+.navbar-collapse {
+  padding-right: 5vw;
+}
+
+.navbar-toggler {
+  margin-right: 5vw;
+}
+
+.navbar-nav {
+  margin: 0 0 0 auto;
+}
+
+.nav-link {
+  margin-left: 5vw;
+  color: black;
+  text-align: left;
+  padding: 0;
+}
+
+#content {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+/*
+/*
+/*first section */
+.background-section-start {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffbf69;
+  width: 100vw;
+  margin-top: 0;
+  padding-right: 5vw;
+}
+
+.background-section-start::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+  background-image: url("img/background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-section-hover::before {
+  width: 100vw;
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+  background-color: #fc2e20;
+  background-image: url("img/background2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 10vw;
+  font-weight: bold;
+  text-align: left;
+}
+
+h2 {
+  font-size: 3vw;
+  text-align: left;
+  padding-left: 0;
+}
+
+.popIt-btn {
+  width: 24vw;
+  height: 6vw;
+  background-color: #cbf3f0;
+  border: none;
+  font-weight: bold;
+}
+
+/*
+/*
+/*
+/*second section */
+
+.whatIsPop {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 7vw;
+}
+
+.popIs {
+  font-size: 2vw;
+  text-align: center;
+  padding: 2vw 15vw 6vw 15vw;
+}
+
+.image-row {
+  background-color: #cbf3f0;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 5vw;
+}
+
+.img-inside {
+  margin: auto;
+  padding: auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-inside img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  margin: 2vh;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.choose-btn {
+  width: 12vw;
+  height: 3vw;
+  background-color: #ffbf69;
+  border: none;
+  margin: auto;
+  font-weight: bold;
+}
+
+/*
+/*
+/*
+/*third section */
+
+.choose-pop-it {
+  font-size: 3vw;
+  font-weight: bold;
+  padding-bottom: 3vh;
+}
+
+/*
+/*
+/*
+/*fouth section */
+
+.game-instructions {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: left;
+}
+
+.play-instructions {
+  width: 50vw;
+  font-size: 2vw;
+  text-align: left;
+}
+
+.background-section-end {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.background-section-end::before {
+  content: "";
+  display: block;
+  padding-top: 36.25%; /* Wysokość / Szerokość * 100% (tło uzupełnione w background-section) */
+  background-image: url("img/bg-grid.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-end {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5vw;
+  margin-top: 7vw;
+  display: flex; /* Dodajemy flexbox */
+  flex-direction: column; /* Ustawiamy kierunek flexbox na kolumnowy */
+  justify-content: center; /* Wyśrodkowanie wzdłuż osi Y */
+  align-items: flex-start; /* Wyśrodkowanie wzdłuż osi X (lewa strona) */
+}
+
+.image-on-image {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+
+.first-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 75%;
+  height: auto;
+}
+
+/*
+/*
+/*
+/*footer-nav*/
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  padding: 3vh 0;
+}
+
+.footer-nav {
+  padding: 0 0 0 5vw;
+  margin: 0;
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-brand {
+  margin: 0;
+  /* padding-left: 5vw; */
+  font-size: 2vw;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer-item {
+  font-size: 2vw;
+  display: inline-block;
+  padding-right: 5vw;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-brand b {
+  color: #fff;
+}
